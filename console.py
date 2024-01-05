@@ -130,7 +130,7 @@ class HBNBCommand(cmd.Cmd):
                 arg_split[1] = arg_split[1].replace("_", " ").replace('"', '\\"')
             kw[arg_split[0]] = arg_split[1]
         new_instance = HBNBCommand.classes[args_list[0]](**kw)
-        storage.save()
+        new_instance.save()
         print(new_instance.id)
         storage.save()
 
