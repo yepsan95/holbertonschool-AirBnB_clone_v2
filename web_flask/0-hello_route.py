@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Starts a Flask web application.
 
+Host 0.0.0.0, port 5000.
 Routes:
     /: Displays 'Hello HBNB!'
 """
